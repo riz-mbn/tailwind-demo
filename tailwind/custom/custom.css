@@ -1,0 +1,506 @@
+/**
+ * Custom CSS.
+ */
+
+body {
+	@apply text-secondary;
+	@apply font-sans;
+}
+
+/* Alpine JS */
+[x-cloak=""] { display: none !important; }
+
+/* Gravity Forms */
+.gform_wrapper .gfield_validation_message, .gform_wrapper .validation_message {
+	border: none !important;
+	background: none !important;
+	font-size: 0.75rem !important;
+	padding: 5px !important;
+}
+
+/* Lander */
+#lander-container {
+	height: 100vh;
+}
+
+#lander-container section {
+	scroll-snap-align: start;
+}
+
+/* Lander Footer CTA */
+.lander-footer-cta input {
+	border-color: #DDDDDD;
+}
+
+.lander-footer-cta input::placeholder {
+	@apply text-secondary-light;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.lander-footer-cta input:focus {
+	@apply ring-secondary-dark;
+	@apply border-secondary-dark;
+}
+
+.lander-footer-cta .gfield_html {
+	@apply font-light;
+	@apply text-sm;
+	@apply leading-[22px];
+}
+
+.lander-footer-cta .gform_footer {
+	text-align: right;
+}
+
+.lander-footer-cta .button {
+	@apply font-bold;
+	border-radius: 60px;
+	background: url('./resources/images/lander-footer-form-button-bg.svg');
+	cursor: pointer;
+	font-size: 15px;
+	width: 262px;
+	height: 40px;
+	text-align: left;
+	padding-left: 50px;
+}
+
+
+/*
+	Media Queries
+*/
+
+@screen lg {
+	.lander-footer-cta input::placeholder {
+		font-size: 15px;
+	}
+	.lander-footer-cta .gfield_html {
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+}
+
+@screen xl {
+	.lander-footer-cta input::placeholder {
+		font-size: 18px;
+	}
+	.lander-footer-cta .gfield_html {
+		font-size: 0.875rem;
+		line-height: 1.025625rem;
+	}
+}
+
+
+/** NEW **/
+.container {
+	max-width: 1410px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-right: 30px !important;
+    padding-left: 30px !important;
+}
+
+.bggradient {
+	background: linear-gradient( 180deg, rgba(241, 230, 219, 0.4) 0%, rgba(241, 230, 219, 0) 100%), linear-gradient( 0deg, #F9F2E6, #F9F2E6);
+}
+
+.services_item .item {
+	width: 260px;
+}
+
+.services_item .item .service_content {
+	width: 230px;
+	margin-left: 30px;
+}
+
+.services_item .item figure:before {
+	position: absolute;
+    content: '';
+    background: #fff;
+	height: 2px;
+}
+.services_item .item figure:after {
+	position: absolute;
+    content: '';
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+/* botox */
+.services_item .botox_item {
+	top: -10%;
+    left: 6%;
+	width: 260px;
+}
+
+.services_item .item.botox_item figure:before {
+	width: 370px;
+	transform: rotate(219deg);
+    bottom: -70px;
+    right: -273px;
+}
+.services_item .item.botox_item figure:after {
+    bottom: -190px;
+    right: -236px;
+}
+
+/* pdo */
+.services_item .pdo_item {
+	top: 35%;
+    left: 6%;
+}
+
+.services_item .item.pdo_item figure:before {	
+    width: 325px;
+    top: 60%;
+    right: -270px;
+
+}
+.services_item .item.pdo_item figure:after {
+    top: 58%;
+    right: -280px;
+}
+
+/* dermafiller */
+.services_item .dermafiller_item {
+	bottom: -30%;
+    left: 6%;
+}
+
+.services_item .item.dermafiller_item figure:before {	
+	transform: rotate(153deg);
+    width: 430px;
+    top: -66px;
+    right: -343px;
+
+}
+.services_item .item.dermafiller_item figure:after {
+    top: -170px;
+    right: -329px;
+}
+
+/* prf */
+.services_item .prf_item {
+    top: -25%;
+    right: 8%;
+}
+
+.services_item .item.prf_item figure:before {	
+	transform: rotate(140deg);
+    width: 370px;
+    bottom: -40px;
+    left: -280px;
+
+}
+.services_item .item.prf_item figure:after {
+    bottom: -163px;
+    left: -242px;
+}
+
+/* micro */
+.services_item .micro_item {
+    top: -25%;
+    right: 8%;
+}
+
+.services_item .item.micro_item figure:before {	
+	transform: rotate(190deg);
+    width: 370px;
+    bottom: -40px;
+    left: -280px;
+
+}
+.services_item .item.micro_item figure:after {
+    bottom: -163px;
+    left: -242px;
+}
+
+/* micro */
+.services_item .micro_item {
+    top: 30%;
+    right: 8%;
+}
+
+.services_item .item.micro_item figure:before {	
+	transform: rotate(190deg);
+    width: 250px;
+    top: 90px;
+	left: -190px;
+
+}
+.services_item .item.micro_item figure:after {
+	top: 63px;
+	left: -197px;
+}
+
+/* kybella */
+.services_item .kybella_item {
+	bottom: -30%;
+    right: 8%;
+}
+
+.services_item .item.kybella_item figure:before {	
+	transform: rotate(220deg);
+    width: 330px;
+    top: -50px;
+    left: -240px;
+
+}
+.services_item .item.kybella_item figure:after {
+    top: -163px;
+    left: -210px;
+}
+@media (max-width:1399px) {
+		
+	.services_item .item figure:before,
+	.services_item .item figure:after {	
+		display: none;
+
+	}		
+
+	/* botox */
+	.services_item .item {
+		position: unset !important;
+	}
+
+}
+
+
+/* slick-next */
+
+.services_item.slick-slider .slick-prev {
+	left: 10px;
+	background: url(https://www.ellebemedspa.com/wp-content/themes/mybizniche/resources/img/icon/icn-arrow-solid-l.svg) no-repeat center;
+	width: 11px;
+	height: 14px;
+	font-size: 0;
+
+}
+.services_item.slick-slider .slick-next {
+	display: none;
+}
+
+
+.slick-slider {
+	padding-right: 0;
+	padding-left: 80px;
+	position: relative;
+  }
+  
+  .slick-slider .slick-track .slick-slide {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+  }
+  
+  .slick-slider .slick-next {
+	display: none !important;
+  }
+  
+  @media (max-width: 768px) {
+	.slick-slider {
+	  padding-left: 30px !important;
+	}
+	.slick-slider .slick-prev {
+	  left: -10px !important;
+	}
+  }
+  
+  
+.services_item.slick-slider .slick-track {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+  }
+  
+  .services_item.slick-slider .slick-track .slick-slide {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+  }
+  
+  .services_item.slick-slider .slick-track .slick-slide:not(.slick-current) figure {
+	width: 60%;
+	margin: 0 auto;
+  }
+  
+  .services_item.slick-slider .slick-track .slick-slide:not(.slick-current) figure img {
+	-webkit-filter: brightness(50%);
+			filter: brightness(50%);
+  }
+  
+  .services_item.slick-slider .slick-track .slick-prev {
+	left: -10px !important;
+  }
+
+
+  @media (max-width: 1200px) {
+	.services_item.slick-slider .slick-slide.item {
+	  width: 170px;
+	}
+  }
+  
+  @media (max-width: 1024px) {
+	.services_item {
+	  margin-top: -80px;
+	}
+	.services_item.slick-slider .slick-slide.item {
+	  width: 150px;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.services_item {
+	  margin-top: -60px;
+	}
+	.services_item.slick-slider .slick-slide.item {
+	  width: 110px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.services_item {
+	  margin-top: -30px;
+	}
+	.services_item.slick-slider .slick-slide.item {
+	  width: 55px;
+	}
+  }
+  
+  @media (max-width: 375px) {
+	.services_item {
+	  margin-top: -30px;
+	}
+	.services_item.slick-slider .slick-slide.item {
+	  width: 47px;
+	}
+  }
+
+  /*slick content */
+
+
+
+  .services_item_slick.slick-slider .slick-arrow {
+	display: none !important;
+  }
+
+/* Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .slick-list:focus {
+	outline: none;
+  }
+  
+  .slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+  .slick-track:before, .slick-track:after {
+	content: "";
+	display: table;
+  }
+  
+  .slick-track:after {
+	clear: both;
+  }
+  
+  .slick-loading .slick-track {
+	visibility: hidden;
+  }
+  
+  .slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	display: none;
+  }
+  
+  [dir="rtl"] .slick-slide {
+	float: right;
+  }
+  
+  .slick-slide img {
+	display: block;
+  }
+  
+  .slick-slide.slick-loading img {
+	display: none;
+  }
+  
+  .slick-slide.dragging img {
+	pointer-events: none;
+  }
+  
+  .slick-initialized .slick-slide {
+	display: block;
+  }
+  
+  .slick-loading .slick-slide {
+	visibility: hidden;
+  }
+  
+  .slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+  }
+  
+  .slick-arrow.slick-hidden {
+	display: none;
+  }
+  
+  .slick-slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    cursor: pointer;
+    opacity: 0.3;
+    border: 0 !important;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}

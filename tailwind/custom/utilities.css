@@ -1,0 +1,48 @@
+/**
+ * Custom utility classes.
+ */
+
+@layer utilities {
+	@variants responsive {
+		.text-outline {
+			color: white;
+			text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+		}
+		.text-outline-primary {
+			color: white;
+			text-shadow: -1px -1px 0 theme(colors.primary.DEFAULT), 1px -1px 0 theme(colors.primary.DEFAULT), -1px 1px 0 theme(colors.primary.DEFAULT), 1px 1px 0 theme(colors.primary.DEFAULT);
+		}
+		.text-outline-secondary {
+			color: white;
+			text-shadow: -1px -1px 0 theme(colors.secondary.DEFAULT), 1px -1px 0 theme(colors.secondary.DEFAULT), -1px 1px 0 theme(colors.secondary.DEFAULT), 1px 1px 0 theme(colors.secondary.DEFAULT);
+		}
+		.text-outline-accent {
+			color: white;
+			text-shadow: -1px -1px 0 theme(colors.accent.DEFAULT), 1px -1px 0 theme(colors.accent.DEFAULT), -1px 1px 0 theme(colors.accent.DEFAULT), 1px 1px 0 theme(colors.accent.DEFAULT);
+		}
+    .scroll-snap-none {
+      scroll-snap-type: none;
+    }
+    .scroll-snap-x {
+      scroll-snap-type: x mandatory;
+    }
+    .scroll-snap-y {
+      scroll-snap-type: y mandatory;
+    }
+		.scroll-snap-align-none {
+			scroll-snap-align: none;
+		}
+		.scroll-snap-align-start {
+			scroll-snap-align: start;
+		}
+		.scroll-snap-align-end {
+			scroll-snap-align: end;
+		}
+		.scroll-snap-align-center {
+			scroll-snap-align: center;
+		}
+		.overflow-x-clip {
+			overflow-x: clip;
+		}
+	}
+}
